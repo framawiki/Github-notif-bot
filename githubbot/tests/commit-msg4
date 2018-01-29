@@ -1,0 +1,19 @@
+
+
+
+Parent:     5159e45c (MWSite.__init__: Re-raise the RequestException of _parse_post_117)
+Author:     Matěj Suchánek <matejsuchanek97@gmail.com>
+AuthorDate: 2017-05-26 17:11:00 +0200
+Commit:     Matěj Suchánek <matejsuchanek97@gmail.com>
+CommitDate: 2017-06-04 09:36:42 +0200
+
+When moving a category, track number of members locally as well
+
+It may happen that the category hasn't been emptied yet although
+it had been removed from all articles.
+
+Bug: T135304
+Bug: T98116111
+Change-Id: Ib03b0eb88056e8200090b6d64e0f8da2abdbfbe3
+
+

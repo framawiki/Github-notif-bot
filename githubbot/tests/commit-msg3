@@ -1,0 +1,19 @@
+Parent:     4be93367 (Create superclass for log entries with user targets)
+Author:     xqt <info@gno.de>
+AuthorDate: 2015-08-15 11:08:41 +0200
+Commit:     xqt <info@gno.de>
+CommitDate: 2017-07-02 17:59:09 +0200
+
+[IMPR] NewUsersEntry class retrieves User object for page() method
+
+- Derive NewUsersEntry from UserTargetLogEntry which returns a User class
+  for page() method
+- Do nit inherit page method in UserTargetLogEntry. Otherwise instantiating
+  the User object may fail in NewUsersEntry
+  (and later in BlockEntry with next patch)
+- It is no longer necessary to change the class in welcome.py
+- Update tests to check User class (T5564)
+Bug: T465545
+
+Bug: T168784
+Change-Id: Ib5c0074248102b39f4375e849bec17812afa87c0

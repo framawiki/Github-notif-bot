@@ -1,0 +1,17 @@
+*.bak
+*.pyc
+*.pyo
+*.*~
+/.tox
+/*.egg
+logs*
+*pycache*
+/cache/*
+.cache
+.idea
+build
+bin
+dist
+docs/_build/
+docs/_bin/
+config.json

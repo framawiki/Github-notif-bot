@@ -1,0 +1,14 @@
+Parent:     707082bf (Merge "[IMPR] Improve maintenance/wikimedia_sites.py")
+Author:     Framawiki <framawiki@tools.wmflabs.org>
+AuthorDate: 2017-07-01 22:25:04 +0200
+Commit:     Framawiki <framawiki@tools.wmflabs.org>
+CommitDate: 2017-07-01 22:25:04 +0200
+
+[bugfix] illustratewikidata: rename page_image key in page_image_free
+
+The name of the key is no longer page_image but is now page_image_free.
+So illustrate_wikidata.py is actually entirely broken.
+Note: I don't think that we need, with this script, to get non-free images too. So I'll just implement the rename, not the both elements key.
+
+Bug: T169447
+Change-Id: Ia28c472c88baaad68f0042057905a0dbcd433ec8
